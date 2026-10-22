@@ -18,6 +18,7 @@ jobs:
 
   #Second Job
   echo-Goodbye:
+    needs: Hello-Job
     runs-on: ubuntu-slim
     steps:
       - name: Say Goodbye
