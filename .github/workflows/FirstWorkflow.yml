@@ -1,0 +1,27 @@
+#Workflow Name
+name: First WorkFlow
+
+#Trigger
+on: 
+  push:
+  workflow_dispatch: #Manual trgger
+
+jobs:
+  #First Job
+  Hello-Job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello world
+        run: echo "Hello World"
+      - name: Event Name
+        run: echo "Event Name :${{github.event}}"
+
+  #Second Job
+  echo-Goodbye:
+    runs-on: ubuntu-slim
+    steps:
+      - name: Say Goodbye
+        run: echo "Goodbye"
+
+
+    
