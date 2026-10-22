@@ -24,5 +24,12 @@ jobs:
       - name: Say Goodbye
         run: echo "Goodbye"
 
+  #Third Job
+  THIRD-Job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Third Job
+        run: echo "tHIRD jOB"
+
 
     
